@@ -1,0 +1,26 @@
+body{
+    font-family:Roboto,sans-serif;
+    background-color: darken(white,5%);
+}
+/*seletor especial para declarar variaveis*/
+
+h2{
+    text-align: center;
+}
+
+$honeydew: #e2fcefff;
+$pink-lavender: #cfa5b4ff;
+$st-patricks-blue: #19297cff;
+$primary-sass:#e2fcefff;
+$primary:rgb(73, 63, 184);
+$secondary:#6a6262ff;
+
+/*& referencia o pai */
+.stripped section{
+    padding: 25px 0;
+
+    &:nth-child(2n){
+        background-color: $primary;
+        color:white;
+    }
+}

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/*seletor especial para declarar variaveis*/
+h2 {
+  text-align: center;
+}
+
+/*& referencia o pai */
+.stripped section {
+  padding: 25px 0;
+}
+.stripped section:nth-child(2n) {
+  background-color: rgb(73, 63, 184);
+  color: white;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+.hero {
+  height: 100vh;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(102, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/simon-migaj-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  background-color: rgba(167, 204, 237, 0.8);
+  text-align: center;
+  width: 100%;
+  padding: 5% 0;
+}
+.hero-title h1 {
+  color: rgb(73, 63, 184);
+  margin-bottom: 0;
+}
+.hero-title h2 {
+  color: #6a6262;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+  /*Troca o eixo principal do flex-box*/
+  /*flex-direction: row-reverse;*/
+}
+.cards-container .card {
+  height: 350px;
+  width: 350px;
+  position: relative;
+}
+.cards-container .card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/*
+Funcionamento do display inline
+|--------------------------1920px--------------------------|
+|------400px-------||------400px-------||------400px-------|
+observação: Trata a div como um texto
+
+O display flex sempre será utilizado na Tag pai
+
+<div PAI>
+    <div FILHO></div>
+    <div FILHO></div>
+    <div FILHO></div>
+</div>
+
+*/
+.section-vantagem h2 {
+  margin-bottom: 0;
+}
+.section-vantagem .vantagem-container {
+  display: flex;
+  justify-content: center;
+}
+.section-vantagem .vantagem-container .vantagem {
+  width: 30vw;
+  text-align: center;
+  font-size: 1.2em;
+}
+.section-vantagem .vantagem-container .vantagem p {
+  text-align: center;
+  padding: 0 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vw;
+}
+form * {
+  margin: 5px 0;
+  border-radius: 5px;
+}
+form button {
+  background-color: rgb(73, 63, 184);
+  color: blue;
+}
+
+footer {
+  background-color: black;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-info {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=general.css.map */
