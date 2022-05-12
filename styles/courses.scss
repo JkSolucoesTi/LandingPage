@@ -1,0 +1,60 @@
+@mixin centralizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+
+    .card{                
+        height: 350px;
+        width: 350px;    
+        position: relative;
+
+        .card-footer{
+
+            @include centralizar();
+        
+            position: absolute;
+            bottom: 0;  
+            left: 0;
+            right: 0;          
+            height: 20%;
+
+            background-color: gray;
+            color:white;
+
+            text-align: center;
+            justify-content: center;
+
+            font-size: 1.3em;
+            font-weight: bold;
+
+        }
+    }
+
+    /*Troca o eixo principal do flex-box*/
+    /*flex-direction: row-reverse;*/
+}
+
+
+
+/*
+Funcionamento do display inline
+|--------------------------1920px--------------------------|
+|------400px-------||------400px-------||------400px-------|
+observação: Trata a div como um texto
+
+O display flex sempre será utilizado na Tag pai
+
+<div PAI>
+    <div FILHO></div>
+    <div FILHO></div>
+    <div FILHO></div>
+</div>
+
+*/

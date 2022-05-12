@@ -1,0 +1,21 @@
+.section-vantagem{
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    .vantagem-container{
+        display: flex;    
+        justify-content: center;
+        .vantagem{
+            width: 30vw;                
+            text-align: center;
+            font-size: 1.2em;
+            p{
+                text-align: center;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
